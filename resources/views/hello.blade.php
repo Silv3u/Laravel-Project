@@ -6,13 +6,14 @@
 <title>Login / Register</title>
 
 <style>
+        /*borderb*/
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: Arial, sans-serif;
     }
-
+    /*bodyb*/
     body {
         height: 100vh;
         display: flex;
@@ -20,8 +21,8 @@
         align-items: center;
         background: linear-gradient(135deg, #667eea, #764ba2);
     }
-
-    .container {
+    /*centralb*/
+    .container { 
         background: #fff;
         width: 350px;
         padding: 30px;
@@ -29,7 +30,7 @@
         box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         position: relative;
     }
-
+    /*tabs*/
     .tabs {
         display: flex;
         margin-bottom: 20px;
@@ -44,7 +45,7 @@
         border-bottom: 2px solid #ddd;
         transition: 0.3s;
     }
-
+/*Switchtab*/
     input[type="radio"] {
         display: none;
     }
@@ -54,7 +55,7 @@
         border-bottom: 2px solid #667eea;
         color: #667eea;
     }
-
+/*userinput for name/password (gets later imported to database of phpmyadmin)*/
     .form {
         display: none;
         flex-direction: column;
@@ -92,7 +93,7 @@
     .form button:hover {
         background: #5563c1;
     }
-
+/*forgottext*/
     .forgot {
         text-align: right;
         font-size: 12px;
