@@ -116,22 +116,22 @@
     </div>
 
     <div class="forms">
-        <!-- Login Form -->
-        <form class="form login-form">
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
-            <div class="forgot">Forgot password?</div>
-            <button type="submit">Login</button>
-        </form>
+     <!-- Login Form -->
+        <form class="form login-form" action="login.php" method="POST">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <div class="forgot">Forgot password?</div>
+        <button type="submit">Login</button>
+</form>
 
-        <!-- Register Form -->
-        <form class="form register-form">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
-            <input type="password" placeholder="Confirm Password" required>
-            <button type="submit">Register</button>
-        </form>
+<!-- Register Form -->
+<form class="form register-form" action="register.php" method="POST">
+        <input type="text" name="fullname" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+        <button type="submit">Register</button>
+</form>
     </div>
 </div>
 
