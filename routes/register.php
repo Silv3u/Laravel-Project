@@ -19,9 +19,9 @@ $stmt = $conn->prepare("INSERT INTO users (fullName, email, password) VALUES (?,
 $stmt->bind_param("sss", $fullName, $email, $hashed);
 
 if ($stmt->execute()) {
-  echo "Registered successfully ✅";
+  echo "Registered successfully ";
 } else {
-  echo "Email already exists ❌";
+  echo "Email already exists ";
 }
 
 $stmt->close();

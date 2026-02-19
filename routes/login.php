@@ -17,12 +17,12 @@ if ($stmt->num_rows === 1) {
   $stmt->fetch();
 
   if (password_verify($password, $hashed)) {
-    echo "Login successful 🎉";
+    echo "Login successful ";
   } else {
-    echo "Wrong password ❌";
+    echo "Wrong password ";
   }
 } else {
-  echo "User not found ❌";
+  echo "User not found ";
 }
 
 $stmt->close();
