@@ -15,7 +15,7 @@ if ($password !== $confirm) {
 
 $hashed = password_hash($password, PASSWORD_DEFAULT);
 
-$stmt = $conn->prepare("INSERT INTO users (fullName, email, password) VALUES (?, ?, ?)");
+$stmt = $conn->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, ?)");
 $stmt->bind_param("sss", $fullName, $email, $hashed);
 
 if ($stmt->execute()) {
