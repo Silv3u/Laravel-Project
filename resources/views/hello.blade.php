@@ -117,20 +117,22 @@
 
     <div class="forms">
      <!-- Login Form -->
-        <form class="form login-form" action="login.php" method="POST">
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <div class="forgot">Forgot password?</div>
-        <button type="submit">Login</button>
+<form class="form login-form" action="/login" method="POST">
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <div class="forgot"><a href="/forgot-password">Forgot password?</a></div>
+    <button type="submit">Login</button>
 </form>
 
 <!-- Register Form -->
-<form class="form register-form" action="register.php" method="POST">
-        <input type="text" name="fullname" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
-        <button type="submit">Register</button>
+<form class="form register-form" action="/register" method="POST">
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="password" name="password_confirmation" placeholder="Confirm Password" required>
+    <button type="submit">Register</button>
 </form>
     </div>
 </div>
