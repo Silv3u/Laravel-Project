@@ -6,6 +6,5 @@ use Illuminate\Support\Facades\Route;
 //   return view('welcome');
 //});
 
-Route::get('/', function(){
-    return view('hello');
-});
+// routes/web.php
+Route::view('/', 'hello');
